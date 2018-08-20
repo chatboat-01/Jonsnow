@@ -40,7 +40,7 @@ try:
         except sr.RequestError as e:
             print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
         conn = sqlite3.connect('test.db')
-        data = conn.execute("select * from vnist1 where Pname = '" + value1 + "'")
+        data = conn.execute("select * from chatboat1 where Pname = '" + value1 + "'")
         text  =''
         if(value1 == 'quit'):
             text = "bye"
